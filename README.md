@@ -43,22 +43,22 @@ Expected Output [0]
 Test:  "It should return an array with 0 if the user enters 0."
 Code:
 roboger(0);
-Expected Output (0);
+Expected Output [0];
 
 Test:  "It should return an array with "Beep!" if the user enters 1."
 Code:
 roboger(1);
-Expected Output (0, "Beep!");
+Expected Output [0, "Beep!"];
 
 Test:  "It should return an array with "Boop!" if the user enters 2."
 Code:
 roboger(2);
-Expected Output (0, "Beep!", "Boop!");
+Expected Output [0, "Beep!", "Boop!"];
 
 Test:  "It should return an array with "Won't you be my neighbor?" if the user enters 3."
 Code:
 roboger(3);
-Expected Output (0, "Beep!", "Boop!", "Won't you be my neighbor?");
+Expected Output [0, "Beep!", "Boop!", "Won't you be my neighbor?"];
 
 
 
