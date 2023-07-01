@@ -60,6 +60,30 @@ Code:
 roboger(3);
 Expected Output [0, "Beep!", "Boop!", "Won't you be my neighbor?"];
 
+Test:  "It should return "Beep!" as the last entry for user input 10."
+Code:
+roboger(10);
+Expected Output [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, .. 9, "Beep!"];
+
+Test:  "11, 12, 13 should repeat 1, 2, 3 at the end for input 13."
+Code:
+roboger(13);
+Expected Output [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, .. 9, "Beep!", "Boop!", "Won't you be my neighbor?"];
+
+Test:  "10's (except 12, 13) should return 'Beep!'."
+Code:
+roboger(19);
+Expected Output for 10's [..,"Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!"];
+
+Test:  "20's (except 23) should return 'Boop!'."
+Code:
+roboger(29);
+Expected Output for 20's [..,"Boop!","Boop!","Boop!", "Won't you be my neighbor?", ,"Boop!","Boop!","Boop!","Boop!","Boop!","Boop!"];
+
+Test:  "30's return 'Won't you be my neighbor?'."
+Code:
+roboger(39);
+Expected Output for 30's [..,"Won't you be my neighbor?" x 10];
 
 
 

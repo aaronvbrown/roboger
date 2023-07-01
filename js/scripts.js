@@ -21,10 +21,14 @@ function roboger(userNumber) {
 
 
 //tests for node
-console.log(roboger(0));
-console.log(roboger(1));
-console.log(roboger(2));
-console.log(roboger(3));
+// console.log(roboger(0));
+// console.log(roboger(1));
+// console.log(roboger(2));
+// console.log(roboger(3));
+// console.log(roboger(10));
+// console.log(roboger(19));
+// console.log(roboger(29));
+// console.log(roboger(39));
 
 
 
