@@ -25,8 +25,8 @@ This page intended to return a list of numbers and responses based on a user inp
 * install vs code
 * install live server for vs code
 * open the repo in vs code
-* open index.htm in browser using live server
-* view the page via gitup pages here:  https://aaronvbrown.github.io/port/
+* open index.html in browser using live server
+
 
 ## Known Bugs
 * none at this time
