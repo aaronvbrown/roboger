@@ -16,19 +16,29 @@ function roboger(userNumber) {
     return neighborhood;
 }
 // User Interface Logic
+window.addEventListener("load", function() {
+    let form = document.querySelector("form");
+    let reverseBtn = document.getElementById("reverse");
+    let result = document.getElementById("result");
+
+    form.addEventListener("submit", function(event) {
+        const numberInput = document.getElementById("numberInput").value;
+        const listOut = roboger(numberInput);
+        result.innerHTML = listOut; 
+        document.getElementById("result").removeAttribute("class");
+        event.preventDefault();
+    });
+    reverseBtn.addEventListener("click", function() {
+        const numberInput = document.getElementById("numberInput").value;
+        const listOut = roboger(numberInput).reverse();
+        result.innerHTML = listOut;
+        event.preventDefault();
+    });
+});
 
 
 
 
-//tests for node
-// console.log(roboger(0));
-// console.log(roboger(1));
-// console.log(roboger(2));
-// console.log(roboger(3));
-// console.log(roboger(10));
-// console.log(roboger(19));
-// console.log(roboger(29));
-// console.log(roboger(39));
 
 
 
